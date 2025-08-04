@@ -14,14 +14,14 @@ from oauth2client.service_account import ServiceAccountCredentials
 # ---------- Configuration ----------
 BASE_URL = 'https://www.chess.com/vi/ratings'
 SHEET_URL = 'https://docs.google.com/spreadsheets/d/1Drh72wt8JIqdLgPFKdXeR-wH2qFAlaqVbFwWj70HCFs/edit#gid=0'
-# GOOGLE_SHEETS_KEYFILE = 'credentials.json'
+GOOGLE_SHEETS_KEYFILE = 'credentials.json'
 SPREADSHEET_ID = '1Drh72wt8JIqdLgPFKdXeR-wH2qFAlaqVbFwWj70HCFs'
 SOURCE_SHEET = "Tops"
 RESULT_SHEET = "Result"
 COLUMN_MAP = {"Cờ cổ điển": 1, "Cờ nhanh": 2, "Cờ chớp": 3}
 CHROME_USER_DATA_DIR = os.path.expanduser('~/chrome_profile')
 CHROME_PROFILE_NAME = 'Mạnh Đức'
-GOOGLE_SHEETS_KEYFILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+# GOOGLE_SHEETS_KEYFILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 
 # ---------- Helpers ----------
