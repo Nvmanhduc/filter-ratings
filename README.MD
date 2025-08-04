@@ -4,3 +4,11 @@
 - Theo dõi các ô nhập điểm trong sheet (ô `B1`, `C1`, `D1`)
 - Lọc và xuất danh sách người chơi có điểm số **lớn hơn hoặc bằng** giá trị được nhập
 - Ghi kết quả lọc vào sheet `Result`
+
+1. Tạo `credentials.json`
+
+- Vào [Google Cloud Console](https://console.cloud.google.com/)
+- Tạo service account → cấp quyền `Editor` hoặc `Sheets API + Drive API`
+- Tạo khóa JSON → tải về → đặt tên là `credentials.json`
+
+2. Run `python filter_ratings.py` 
